@@ -1,0 +1,70 @@
+
+/*==========  Mobile first boilerplate ==========*/
+
+/* Styles that apply to all devices */
+body {
+  padding: 30px;
+}
+h1 {
+  color: red;
+  text-align: center;
+}
+.box {
+  border: 3px solid red;
+  height: 200px;
+  width: 200px;
+  /* I want them side by side */
+  display: inline-block;
+}
+
+
+/* Ask yourself... "is the width a min. of x pixels?" */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  body {
+    background-color: blue;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  body {
+    background-color: green;
+  }
+  .box {
+    width: 75%;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  body {
+    background-color: orange;
+  }
+  /* Should be 50%, but we need to account
+  for the border, which adds a few px */
+  .box {
+    width: 45%;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  body {
+    background-color: purple;
+  }
+  .box {
+    width: 30%;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  body {
+    background-color: navy;
+  }
+}
